@@ -4,6 +4,7 @@ Sunset is a colorscheme based on a color palette inspired by the colors of sunse
 
 The base code for this plugin is taken from [dracula.nvim](https://github.com/Mofiqul/dracula.nvim/).  
 
+![demo](https://github.com/meeehdi-dev/sunset.nvim/assets/3422399/ddfcdd23-e203-406b-bdba-72e9ca63914d)
 
 ## Configuration
 
