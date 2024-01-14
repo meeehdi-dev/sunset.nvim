@@ -9,10 +9,10 @@ M.setup = function()
     Comment = { fg = colors.comment, italic = true },
     Constant = { fg = colors.yellow },
     String = { fg = colors.yellow },
-    Character = { fg = colors.green },
-    Number = { fg = colors.green },
+    Character = { fg = colors.orange },
+    Number = { fg = colors.orange },
     Boolean = { fg = colors.cyan },
-    Float = { fg = colors.green },
+    Float = { fg = colors.orange },
     FloatBorder = { fg = colors.white },
     Operator = { fg = colors.magenta },
     Keyword = { fg = colors.cyan },
@@ -34,7 +34,7 @@ M.setup = function()
     StorageClass = { fg = colors.blue },
     Structure = { fg = colors.yellow },
     TypeDef = { fg = colors.yellow },
-    Special = { fg = colors.green, italic = true },
+    Special = { fg = colors.orange, italic = true },
     SpecialComment = { fg = colors.comment, italic = true },
     Error = { fg = colors.bright_red },
     Todo = { fg = colors.magenta, bold = true, italic = true },
@@ -57,7 +57,7 @@ M.setup = function()
 
     Directory = { fg = colors.cyan },
     DiffAdd = { fg = colors.bg, bg = colors.green },
-    DiffChange = { fg = colors.green },
+    DiffChange = { fg = colors.orange },
     DiffDelete = { fg = colors.red },
     DiffText = { fg = colors.comment },
 
@@ -66,8 +66,8 @@ M.setup = function()
     WinSeparator = { fg = colors.black },
     Folded = { fg = colors.comment },
     FoldColumn = {},
-    Search = { fg = colors.black, bg = colors.green },
-    IncSearch = { fg = colors.green, bg = colors.comment },
+    Search = { fg = colors.black, bg = colors.orange },
+    IncSearch = { fg = colors.orange, bg = colors.comment },
     LineNr = { fg = colors.comment },
     MatchParen = { fg = colors.fg, underline = true },
     NonText = { fg = colors.nontext },
@@ -108,21 +108,21 @@ M.setup = function()
     ["@string.regex"] = { fg = colors.red },
     ["@string"] = { fg = colors.yellow },
     ["@string.escape"] = { fg = colors.cyan },
-    ["@character"] = { fg = colors.green },
+    ["@character"] = { fg = colors.orange },
     ["@number"] = { fg = colors.blue },
     ["@boolean"] = { fg = colors.blue },
-    ["@float"] = { fg = colors.green },
+    ["@float"] = { fg = colors.orange },
     ["@annotation"] = { fg = colors.yellow },
     ["@attribute"] = { fg = colors.cyan },
-    ["@namespace"] = { fg = colors.green },
+    ["@namespace"] = { fg = colors.orange },
 
     ["@function.builtin"] = { fg = colors.cyan },
-    ["@function"] = { fg = colors.green },
-    ["@function.macro"] = { fg = colors.green },
-    ["@parameter"] = { fg = colors.green },
-    ["@parameter.reference"] = { fg = colors.green },
-    ["@method"] = { fg = colors.green },
-    ["@field"] = { fg = colors.green },
+    ["@function"] = { fg = colors.orange },
+    ["@function.macro"] = { fg = colors.orange },
+    ["@parameter"] = { fg = colors.orange },
+    ["@parameter.reference"] = { fg = colors.orange },
+    ["@method"] = { fg = colors.orange },
+    ["@field"] = { fg = colors.orange },
     ["@property"] = { fg = colors.magenta },
     ["@constructor"] = { fg = colors.cyan },
 
@@ -145,17 +145,17 @@ M.setup = function()
     ["@variable"] = { fg = colors.fg },
     ["@variable.builtin"] = { fg = colors.magenta },
 
-    ["@text"] = { fg = colors.green },
-    ["@text.strong"] = { fg = colors.green, bold = true }, -- bold
+    ["@text"] = { fg = colors.orange },
+    ["@text.strong"] = { fg = colors.orange, bold = true }, -- bold
     ["@text.emphasis"] = { fg = colors.yellow, italic = true }, -- italic
-    ["@text.underline"] = { fg = colors.green },
+    ["@text.underline"] = { fg = colors.orange },
     ["@text.title"] = { fg = colors.blue, bold = true }, -- title
     ["@text.literal"] = { fg = colors.yellow }, -- inline code
     ["@text.uri"] = { fg = colors.yellow, italic = true }, -- urls
-    ["@text.reference"] = { fg = colors.green, bold = true },
+    ["@text.reference"] = { fg = colors.orange, bold = true },
 
     ["@tag"] = { fg = colors.cyan },
-    ["@tag.attribute"] = { fg = colors.green },
+    ["@tag.attribute"] = { fg = colors.orange },
     ["@tag.delimiter"] = { fg = colors.cyan },
 
     -- Semantic
@@ -173,21 +173,21 @@ M.setup = function()
     -- LSP Semantic (0.9+)
     ["@lsp.type.class"] = { fg = colors.cyan },
     ["@lsp.type.enum"] = { fg = colors.cyan },
-    ["@lsp.type.decorator"] = { fg = colors.green },
+    ["@lsp.type.decorator"] = { fg = colors.orange },
     ["@lsp.type.enumMember"] = { fg = colors.magenta },
-    ["@lsp.type.function"] = { fg = colors.green },
+    ["@lsp.type.function"] = { fg = colors.orange },
     ["@lsp.type.interface"] = { fg = colors.bright_yellow },
     ["@lsp.type.macro"] = { fg = colors.cyan },
-    ["@lsp.type.method"] = { fg = colors.green },
-    ["@lsp.type.namespace"] = { fg = colors.green },
-    ["@lsp.type.parameter"] = { fg = colors.bright_green },
+    ["@lsp.type.method"] = { fg = colors.orange },
+    ["@lsp.type.namespace"] = { fg = colors.orange },
+    ["@lsp.type.parameter"] = { fg = colors.bright_orange },
     ["@lsp.type.property"] = { fg = colors.bright_magenta },
     ["@lsp.type.struct"] = { fg = colors.cyan },
     ["@lsp.type.type"] = { fg = colors.yellow },
     ["@lsp.type.variable"] = { fg = colors.fg },
 
     -- HTML
-    htmlArg = { fg = colors.green },
+    htmlArg = { fg = colors.orange },
     htmlBold = { fg = colors.yellow, bold = true },
     htmlEndTag = { fg = colors.cyan },
     htmlH1 = { fg = colors.blue },
@@ -207,9 +207,9 @@ M.setup = function()
 
     -- Markdown
     markdownBlockquote = { fg = colors.yellow, italic = true },
-    markdownBold = { fg = colors.green, bold = true },
-    markdownCode = { fg = colors.green },
-    markdownCodeBlock = { fg = colors.green },
+    markdownBold = { fg = colors.orange, bold = true },
+    markdownCode = { fg = colors.orange },
+    markdownCodeBlock = { fg = colors.orange },
     markdownCodeDelimiter = { fg = colors.red },
     markdownH1 = { fg = colors.blue, bold = true },
     markdownH2 = { fg = colors.blue, bold = true },
@@ -230,11 +230,11 @@ M.setup = function()
     markdownRule = { fg = colors.comment },
 
     --  Diff
-    diffAdded = { fg = colors.green },
+    diffAdded = { fg = colors.orange },
     diffRemoved = { fg = colors.red },
     diffFileId = { fg = colors.yellow, bold = true, reverse = true },
     diffFile = { fg = colors.nontext },
-    diffNewFile = { fg = colors.green },
+    diffNewFile = { fg = colors.orange },
     diffOldFile = { fg = colors.red },
 
     debugPc = { bg = colors.menu },
@@ -242,10 +242,10 @@ M.setup = function()
 
     -- Git Signs
     GitSignsAdd = { fg = colors.bright_green },
-    GitSignsChange = { fg = colors.cyan },
+    GitSignsChange = { fg = colors.orange },
     GitSignsDelete = { fg = colors.bright_red },
     GitSignsAddLn = { fg = colors.black, bg = colors.bright_green },
-    GitSignsChangeLn = { fg = colors.black, bg = colors.cyan },
+    GitSignsChangeLn = { fg = colors.black, bg = colors.orange },
     GitSignsDeleteLn = { fg = colors.black, bg = colors.bright_red },
     GitSignsCurrentLineBlame = { fg = colors.white },
 
@@ -327,7 +327,7 @@ M.setup = function()
     CmpItemKindTypeParameter = { link = "@parameter" },
 
     -- WinPicker
-    WinPicker = { fg = colors.bg, bg = colors.green },
+    WinPicker = { fg = colors.bg, bg = colors.orange },
   }
 end
 
