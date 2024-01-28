@@ -109,7 +109,7 @@ M.setup = function()
     ["@string"] = { fg = colors.yellow },
     ["@string.escape"] = { fg = colors.cyan },
     ["@character"] = { fg = colors.orange },
-    ["@number"] = { fg = colors.blue },
+    ["@number"] = { fg = colors.bright_magenta },
     ["@boolean"] = { fg = colors.blue },
     ["@float"] = { fg = colors.orange },
     ["@annotation"] = { fg = colors.yellow },
@@ -156,7 +156,7 @@ M.setup = function()
 
     ["@tag"] = { fg = colors.cyan },
     ["@tag.attribute"] = { fg = colors.orange },
-    ["@tag.delimiter"] = { fg = colors.cyan },
+    ["@tag.delimiter"] = { fg = colors.blue },
 
     -- Semantic
     ["@class"] = { fg = colors.cyan },
