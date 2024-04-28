@@ -2,33 +2,33 @@ local colors = require("sunset.palette")
 
 local normal = {
   a = { fg = colors.black, bg = colors.yellow, gui = "bold" },
-  b = { fg = colors.yellow, bg = nil },
-  c = { fg = colors.white, bg = nil },
+  b = { fg = colors.yellow, bg = colors.bg },
+  c = { fg = colors.white, bg = colors.bg },
 }
 
 local command = {
   a = { fg = colors.black, bg = colors.blue, gui = "bold" },
-  b = { fg = colors.blue, bg = nil },
+  b = { fg = colors.blue, bg = colors.bg },
 }
 
 local visual = {
   a = { fg = colors.black, bg = colors.magenta, gui = "bold" },
-  b = { fg = colors.magenta, bg = nil },
+  b = { fg = colors.magenta, bg = colors.bg },
 }
 
 local inactive = {
   a = { fg = colors.fg, bg = colors.visual, gui = "bold" },
-  b = { fg = colors.visual, bg = nil },
+  b = { fg = colors.gutter_fg, bg = colors.bg },
 }
 
 local replace = {
   a = { fg = colors.black, bg = colors.red, gui = "bold" },
-  b = { fg = colors.red, bg = nil },
+  b = { fg = colors.red, bg = colors.bg },
 }
 
 local insert = {
   a = { fg = colors.black, bg = colors.green, gui = "bold" },
-  b = { fg = colors.green, bg = nil },
+  b = { fg = colors.green, bg = colors.bg },
 }
 
 return {
